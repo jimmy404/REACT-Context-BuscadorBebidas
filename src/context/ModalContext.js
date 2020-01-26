@@ -15,7 +15,7 @@ const ModalProvider = () => {
     return (
         <ModalContext.Provider
             value={{
-
+                guardarIdReceta
             }}
         >
             {props.children}
