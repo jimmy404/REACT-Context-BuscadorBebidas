@@ -6,7 +6,7 @@ import axios from 'axios';
 export const ModalContext = createContext();
 
 
-const ModalProvider = () => {
+const ModalProvider = (props) => {
 
     //state provider
     const [ idreceta, guardarIdReceta ] = useState(null);
@@ -19,7 +19,7 @@ const ModalProvider = () => {
             }}
         >
             {props.children}
-        </ModalContext.Provider>>
+        </ModalContext.Provider>
     );
 }
 
