@@ -65,7 +65,14 @@ const Receta = ({receta}) => {
                             guardarIdReceta(receta.idDrink);
                             handleOpen();
                         }}
-                    >Ver Receta</button>
+                    >
+                        Ver Receta
+                    </button>
+                    <Modal>
+                        <div style={modalStyle} className={classes.paper}>
+                            <h1>Desde modal</h1>
+                        </div>
+                    </Modal>
                 </div>
             </div>
         </div>
