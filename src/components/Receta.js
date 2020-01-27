@@ -30,6 +30,20 @@ const useStyles = makeStyles(theme => ({
 
 const Receta = ({receta}) => {
 
+    // Configuracion del modal
+    const [ modalStyle ] = useState(getModalStyle);
+    const [open, setOpen ] = useState(false);
+
+    const classes = useStyles();
+
+    const handleOpen = () => {
+        setOpen(true);
+    }
+    const handleClose = () => {
+        setOpen(false);
+    }
+
+
     //extraer valores del context
     const {guardarIdReceta} = useContext(ModalContext);
 
@@ -48,7 +62,8 @@ const Receta = ({receta}) => {
                         type="button"
                         className="btn btn-block btn-primary"
                         onClick={() => {
-                            guardarIdReceta(receta.idDrink)
+                            guardarIdReceta(receta.idDrink);
+                            handleOpen();
                         }}
                     >Ver Receta</button>
                 </div>
