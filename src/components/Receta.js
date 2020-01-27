@@ -68,9 +68,11 @@ const Receta = ({receta}) => {
                     >
                         Ver Receta
                     </button>
-                    <Modal open={open}
-                    onClose={() => {
-                        handleClose();
+                    <Modal
+                        open={open}
+                        onClose={() => {
+                            guardarIdReceta(null);
+                            handleClose();
                     }}
                     >
                         <div style={modalStyle} className={classes.paper}>
