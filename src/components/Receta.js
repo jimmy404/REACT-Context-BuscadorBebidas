@@ -68,7 +68,11 @@ const Receta = ({receta}) => {
                     >
                         Ver Receta
                     </button>
-                    <Modal>
+                    <Modal open={open}
+                    onClose={() => {
+                        handleClose();
+                    }}
+                    >
                         <div style={modalStyle} className={classes.paper}>
                             <h1>Desde modal</h1>
                         </div>
