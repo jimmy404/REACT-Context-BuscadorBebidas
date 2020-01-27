@@ -30,7 +30,8 @@ const ModalProvider = (props) => {
         <ModalContext.Provider
             value={{
                 informacion,
-                guardarIdReceta
+                guardarIdReceta,
+                guardarReceta
             }}
         >
             {props.children}
