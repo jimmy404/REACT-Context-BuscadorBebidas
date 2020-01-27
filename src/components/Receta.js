@@ -66,7 +66,7 @@ const Receta = ({receta}) => {
             <div className="card">
                 <h2 className="card-header">{receta.strDrink}</h2>
                 <img
-                    className="card-img-wop"
+                    className="card-img-top"
                     src={receta.strDrinkThumb}
                     alt={`Imagen de ${receta.strDrink}`}
                 />

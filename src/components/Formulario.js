@@ -23,7 +23,7 @@ const Formulario = () => {
 
     return (
         <form
-            className="col-12"
+            className="col-md-12"
             onSubmit={e => {
                 e.preventDefault();
                 buscarRecetas(busqueda);
@@ -60,7 +60,7 @@ const Formulario = () => {
                         ))}
                     </select>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-2">
                     <input
                         type="submit"
                         className="btn btn-block btn-primary"
