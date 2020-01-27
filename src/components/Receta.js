@@ -45,7 +45,8 @@ const Receta = ({receta}) => {
 
 
     //extraer valores del context
-    const {guardarIdReceta} = useContext(ModalContext);
+    const {informacion, guardarIdReceta} = useContext(ModalContext);
+    console.log(informacion);
 
 
     return (
