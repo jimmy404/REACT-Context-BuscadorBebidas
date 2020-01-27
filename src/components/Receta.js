@@ -1,5 +1,7 @@
 import React, { useContext } from 'react'
 import {ModalContext} from '../context/ModalContext';
+import Modal from '@material-ui/core/Modal';
+import { makeStyles } from '@material-ui/core/styles';
 
 const Receta = ({receta}) => {
 
